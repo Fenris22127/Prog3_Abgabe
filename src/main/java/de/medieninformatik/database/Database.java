@@ -1,4 +1,4 @@
-package de.medieninformatik;
+package de.medieninformatik.database;
 
 import de.medieninformatik.objects.Author;
 import de.medieninformatik.objects.Book;

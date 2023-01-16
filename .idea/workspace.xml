@@ -4,37 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c5d6672e-5de7-4549-9c66-bd9881799334" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hausarbeit.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/snippets.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/medieninformatik/DBModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/medieninformatik/Data.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/medieninformatik/Database.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/medieninformatik/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/medieninformatik/objects/Author.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/medieninformatik/objects/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/medieninformatik/objects/Subfield.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/de/medieninformatik/author.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/de/medieninformatik/book.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/de/medieninformatik/bookauthor.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/de/medieninformatik/booksubfield.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/de/medieninformatik/init.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/de/medieninformatik/subfield.json" afterDir="false" />
+    <list default="true" id="c5d6672e-5de7-4549-9c66-bd9881799334" name="Changes" comment="Version 0.1: Added connection to database, data and functions to add data to database">
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/medieninformatik/client/IBookOverview.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/medieninformatik/server/BookApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/medieninformatik/server/Rest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/medieninformatik/server/Server.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/de/medieninformatik/CustomLogger.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/medieninformatik/DBModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/medieninformatik/database/DBModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/medieninformatik/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/medieninformatik/database/Data.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/medieninformatik/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/medieninformatik/database/Database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/medieninformatik/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/medieninformatik/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,6 +63,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -104,6 +87,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "WebServerToolWindowFactoryState": "false",
     "database.data.extractors.current.export.id": "CSV-Groovy.csv.groovy",
     "database.data.extractors.current.id": "CSV-Groovy.csv.groovy",
@@ -135,15 +119,15 @@
       <recent name="de.medieninformatik" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.Server">
     <configuration name="Database" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="17" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="de.medieninformatik.Database" />
+      <option name="MAIN_CLASS_NAME" value="de.medieninformatik.database.Database" />
       <module name="Prog3_Abgabe.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="de.medieninformatik.*" />
+          <option name="PATTERN" value="de.medieninformatik.database.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -156,7 +140,20 @@
       <module name="Prog3_Abgabe.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="de.medieninformatik.*" />
+          <option name="PATTERN" value="de.medieninformatik.database.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="de.medieninformatik.server.Server" />
+      <module name="Prog3_Abgabe.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="de.medieninformatik.server.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -208,12 +205,14 @@
     </configuration>
     <list>
       <item itemvalue="Application.Database" />
+      <item itemvalue="Application.Server" />
       <item itemvalue="Application.Main" />
       <item itemvalue="Gradle.Prog3_Abgabe [build]" />
       <item itemvalue="Gradle.Prog3_Abgabe [clean]" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Server" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Gradle.Prog3_Abgabe [build]" />
         <item itemvalue="Gradle.Prog3_Abgabe [clean]" />
@@ -229,14 +228,35 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1673868492974</updated>
-      <workItem from="1673868494048" duration="27252000" />
+      <workItem from="1673868494048" duration="30885000" />
     </task>
+    <task id="LOCAL-00001" summary="Version 0.1: Added connection to database, data and functions to add data to database">
+      <created>1673906745435</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1673906745435</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Version 0.1: Added connection to database, data and functions to add data to database" />
+    <option name="LAST_COMMIT_MESSAGE" value="Version 0.1: Added connection to database, data and functions to add data to database" />
   </component>
 </project>
