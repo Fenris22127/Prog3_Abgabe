@@ -1,0 +1,7 @@
+DATABASE
+    CONNECTION
+        Checks, whether connection is closed (-> false: Connection is open but CAN STILL BE INVALID)
+            System.out.println(DBModel.getInstance().getConnection().isClosed());
+
+NOTES
+    PINDEX = (SELECT count(*) FROM `table`) + 1
