@@ -13,7 +13,7 @@ ext {
     junitVersion = '5.9.1'
     mysqlVersion = '8.0.31'
     restVersion = '3.0.0'
-    jacksonVersion = '2.0.1'
+    jacksonVersion = '2.12.7.1'
     jerseyVersion = '3.0.3'
     grizzlyVersion = '3.0.1'
     jaxbVersion = '3.0.1'
