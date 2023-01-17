@@ -7,10 +7,6 @@ X
 snippets.txt,c\b\cb6386b93c9c3d5bab5200579c9d833be8711b9f
 ;
 gradlew.bat,2\a\2a45a911a8f1836b0b6c5b758962572012d8f8c3
-e
-5src/main/java/de/medieninformatik/objects/Author.java,4\b\4b36ebfdd90445d9d9a1349652bac1a3185fe0d9
-c
-3src/main/java/de/medieninformatik/objects/Book.java,b\b\bb57ad6efeaa7cb09ae0c7acacdf4952f2a9f12f
 :
 
 .gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
@@ -18,3 +14,11 @@ d
 4src/main/java/de/medieninformatik/database/Data.java,f\a\fa8a3f1092a4a840e58e3a711d7eaf9bbbd30551
 g
 7src/main/java/de/medieninformatik/database/DBModel.java,b\c\bceeb63368a4d5c47e4567e4f447c10befc3e5aa
+h
+8src/main/java/de/medieninformatik/database/Database.java,f\0\f0a3e000c5006ad20543b5e33a115cc50e8b1b71
+[
++src/main/java/de/medieninformatik/Main.java,b\c\bcffdc0477340f6e0dab656fcba11f181afe0477
+g
+7src/main/java/de/medieninformatik/objects/Subfield.java,0\d\0d048e5d81dde08f422c6bf3da9e9303f928876a
+d
+4src/main/java/de/medieninformatik/server/Server.java,d\8\d8bc8d78de1098f474efa5cb02252b9ab072abee
