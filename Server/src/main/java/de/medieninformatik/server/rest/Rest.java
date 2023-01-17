@@ -1,7 +1,6 @@
-package de.medieninformatik.server;
+package de.medieninformatik.server.rest;
 
-import de.customlogger.logger.ColorLogger;
-import de.medieninformatik.objects.Book;
+import de.medieninformatik.server.objects.Book;
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.Response;
 
@@ -9,7 +8,7 @@ import java.util.logging.Logger;
 
 @Path("books")
 public class Rest {
-    private static final Logger LOGGER = ColorLogger.newLogger(Rest.class.getName());
+    private static final Logger LOGGER = Logger.getLogger(Rest.class.getName());
 
     @GET
     @Produces("application/json")
@@ -25,6 +24,7 @@ public class Rest {
     public static Response getBook(@PathParam("id") int id) {
         StringBuilder stringBuilder = new StringBuilder();
         //...
+        stringBuilder.append("Book1");
         return Response.ok(stringBuilder.toString()).build();
     }
 

@@ -1,6 +1,5 @@
-package de.medieninformatik.server;
+package de.medieninformatik.server.rest;
 
-import de.customlogger.logger.ColorLogger;
 import org.glassfish.grizzly.http.server.HttpServer;
 import org.glassfish.grizzly.http.server.ServerConfiguration;
 import org.glassfish.grizzly.http.server.StaticHttpHandler;
@@ -15,7 +14,7 @@ import java.util.logging.Logger;
 
 public class Server {
 
-    private static final Logger LOGGER = ColorLogger.newLogger(Server.class.getName());
+    private static final Logger LOGGER = Logger.getLogger(Server.class.getName());
     private static final String URI = "http://localhost:3306/rest";
 
     public static void main(String[] args) {
@@ -27,7 +26,6 @@ public class Server {
             handler.setFileCacheEnabled(false);
             ServerConfiguration serverConfig = server.getServerConfiguration();
             serverConfig.addHttpHandler(handler, "/");
-
             if (!server.isStarted()) server.start();
             LOGGER.log(Level.INFO, "http://localhost:3306/rest/");
             LOGGER.log(Level.INFO, "Server started!");

@@ -16,8 +16,6 @@ g
 7src/main/java/de/medieninformatik/database/DBModel.java,b\c\bceeb63368a4d5c47e4567e4f447c10befc3e5aa
 h
 8src/main/java/de/medieninformatik/database/Database.java,f\0\f0a3e000c5006ad20543b5e33a115cc50e8b1b71
-[
-+src/main/java/de/medieninformatik/Main.java,b\c\bcffdc0477340f6e0dab656fcba11f181afe0477
 g
 7src/main/java/de/medieninformatik/objects/Subfield.java,0\d\0d048e5d81dde08f422c6bf3da9e9303f928876a
 d

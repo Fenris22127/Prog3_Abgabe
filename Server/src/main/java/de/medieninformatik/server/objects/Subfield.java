@@ -1,4 +1,4 @@
-package de.medieninformatik.objects;
+package de.medieninformatik.server.objects;
 
 public record Subfield(
         Integer id,

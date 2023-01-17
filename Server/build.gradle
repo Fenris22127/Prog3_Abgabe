@@ -1,6 +1,7 @@
 plugins {
     id 'java'
     id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.13'
 }
 
 group 'de.medieninformatik'
@@ -24,6 +25,16 @@ run {
     standardOutput = System.out
 }
 
+application {
+    mainModule = 'de.medieninformatik.server'
+    mainClass = 'de.medieninformatik.server.rest.Server'
+}
+
+javafx {
+    version = '17.0.2'
+    modules = ['javafx.controls', 'javafx.fxml']
+}
+
 repositories {
     mavenCentral()
 }
@@ -42,6 +53,7 @@ dependencies {
     implementation "org.glassfish.grizzly:grizzly-websockets:${grizzlyVersion}"
     implementation "jakarta.ws.rs:jakarta.ws.rs-api:${restVersion}"
     implementation "org.glassfish.jaxb:jaxb-runtime:${jaxbVersion}"
+    implementation files("src/main/resources/de/medieninformatik/CustomLogger.jar")
 }
 
 test {

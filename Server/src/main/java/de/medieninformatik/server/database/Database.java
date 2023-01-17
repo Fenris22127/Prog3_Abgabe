@@ -1,8 +1,8 @@
-package de.medieninformatik.database;
+package de.medieninformatik.server.database;
 
-import de.medieninformatik.objects.Author;
-import de.medieninformatik.objects.Book;
-import de.medieninformatik.objects.Subfield;
+import de.medieninformatik.server.objects.Author;
+import de.medieninformatik.server.objects.Book;
+import de.medieninformatik.server.objects.Subfield;
 
 import java.sql.*;
 import java.util.List;

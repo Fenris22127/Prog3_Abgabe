@@ -1,8 +1,8 @@
-package de.medieninformatik.database;
+package de.medieninformatik.server.database;
 
-import de.medieninformatik.objects.Author;
-import de.medieninformatik.objects.Book;
-import de.medieninformatik.objects.Subfield;
+import de.medieninformatik.server.objects.Author;
+import de.medieninformatik.server.objects.Book;
+import de.medieninformatik.server.objects.Subfield;
 
 import java.util.List;
 
@@ -127,11 +127,13 @@ public class Data {
                 new Author(
                         1,
                         "Harold",
-                        "Abelson"),
+                        "Abelson"
+                ),
                 new Author(
                         2,
                         "Frederick P.",
-                        "Brooks Jr."),
+                        "Brooks Jr."
+                ),
                 new Author(
                         3,
                         "Thomas H.",
@@ -213,7 +215,8 @@ public class Data {
                         "Sussman"
                 ),
                 new Author(
-                        19, "Dave",
+                        19,
+                        "Dave",
                         "Thomas"
                 ),
                 new Author(
@@ -228,61 +231,80 @@ public class Data {
         return List.of(
                 new Subfield(
                         1,
-                        "Algorithms"),
+                        "Algorithms"
+                ),
                 new Subfield(
                         2,
-                        "Business"),
+                        "Business"
+                ),
                 new Subfield(
                         3,
-                        "Coding"),
+                        "Coding"
+                ),
                 new Subfield(
                         4,
-                        "Computer Science"),
+                        "Computer Science"
+                ),
                 new Subfield(
                         5,
-                        "Computers"),
+                        "Computers"
+                ),
                 new Subfield(
                         6,
-                        "Engineering"),
+                        "Engineering"
+                ),
                 new Subfield(
                         7,
-                        "History"),
+                        "History"
+                ),
                 new Subfield(
                         8,
-                        "Informatics"),
+                        "Informatics"
+                ),
                 new Subfield(
                         9,
-                        "Management"),
+                        "Management"
+                ),
                 new Subfield(
                         10,
-                        "Mathematics"),
+                        "Mathematics"
+                ),
                 new Subfield(
                         11,
-                        "Nonfiction"),
+                        "Nonfiction"
+                ),
                 new Subfield(
                         12,
-                        "Philosophy"),
+                        "Philosophy"
+                ),
                 new Subfield(
                         13,
-                        "Popular Science"),
+                        "Popular Science"
+                ),
                 new Subfield(
                         14,
-                        "Programming"),
+                        "Programming"
+                ),
                 new Subfield(
                         15,
-                        "Reference"),
+                        "Reference"
+                ),
                 new Subfield(
                         16,
-                        "Science"),
+                        "Science"
+                ),
                 new Subfield(
                         17,
-                        "Software"),
+                        "Software"
+                ),
                 new Subfield(
                         18,
-                        "Technical"),
+                        "Technical"
+                ),
                 new Subfield(
                         19,
-                        "Technology")
+                        "Technology"
+                )
         );
     }
 }

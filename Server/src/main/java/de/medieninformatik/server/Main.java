@@ -1,6 +1,6 @@
-package de.medieninformatik;
+package de.medieninformatik.server;
 
-import de.medieninformatik.database.Database;
+import de.medieninformatik.server.database.Database;
 
 public class Main {
     public static void main(String[] args) {

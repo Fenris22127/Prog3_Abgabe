@@ -1,4 +1,4 @@
-package de.medieninformatik.database;
+package de.medieninformatik.server.database;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

@@ -4,23 +4,38 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c5d6672e-5de7-4549-9c66-bd9881799334" name="Changes" comment="Version 0.3: Extracted client to Client Module and added FXML">
-      <change afterPath="$PROJECT_DIR$/Client/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client/src/main/java/de/medieninformatik/client/BooksClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client/src/main/java/de/medieninformatik/client/BooksOverview.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client/src/main/java/de/medieninformatik/client/IBooksOverview.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client/src/main/java/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client/src/main/resources/de/medieninformatik/client/books-overview.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Common/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Common/src/main/java/de/medieninformatik/Main.java" afterDir="false" />
+    <list default="true" id="c5d6672e-5de7-4549-9c66-bd9881799334" name="Changes" comment="Version 0.4: Added Rest Methods">
+      <change afterPath="$PROJECT_DIR$/Client/src/main/java/de/medieninformatik/client/Filter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/src/main/java/de/medieninformatik/client/controller/BooksClientController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Server/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Server/src/main/java/module-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/de/medieninformatik/authors.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/de/medieninformatik/books.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/de/medieninformatik/subfields.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Client/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/src/main/java/de/medieninformatik/client/BooksClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client/src/main/java/de/medieninformatik/client/BooksClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/src/main/java/de/medieninformatik/client/BooksOverview.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client/src/main/java/de/medieninformatik/client/BooksOverview.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/src/main/java/de/medieninformatik/client/IBooksOverview.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client/src/main/java/de/medieninformatik/client/IBooksOverview.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/src/main/resources/de/medieninformatik/client/books-overview.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Client/src/main/resources/de/medieninformatik/client/books-overview.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/medieninformatik/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/de/medieninformatik/server/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/medieninformatik/database/DBModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/de/medieninformatik/server/database/DBModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/medieninformatik/database/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/de/medieninformatik/server/database/Data.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/medieninformatik/database/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/de/medieninformatik/server/database/Database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/medieninformatik/objects/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/de/medieninformatik/server/objects/Author.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/medieninformatik/objects/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/de/medieninformatik/server/objects/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/medieninformatik/objects/Subfield.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/de/medieninformatik/server/objects/Subfield.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/medieninformatik/server/BookApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/de/medieninformatik/server/rest/BookApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/medieninformatik/server/Rest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/de/medieninformatik/server/rest/Rest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/medieninformatik/server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/de/medieninformatik/server/rest/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/de/medieninformatik/CustomLogger.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/de/medieninformatik/init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/de/medieninformatik/init.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +57,9 @@
           <activation />
         </task>
         <task path="$PROJECT_DIR$/Client">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/Server">
           <activation />
         </task>
         <projects_view>
@@ -78,6 +96,38 @@
                 <item name="Prog3_Abgabe" type="f1a62948:ProjectNode" />
                 <item name="Client" type="2d1252cf:ModuleNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="application" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Prog3_Abgabe" type="f1a62948:ProjectNode" />
+                <item name="Client" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Prog3_Abgabe" type="f1a62948:ProjectNode" />
+                <item name="Server" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Prog3_Abgabe" type="f1a62948:ProjectNode" />
+                <item name="Server" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Prog3_Abgabe" type="f1a62948:ProjectNode" />
+                <item name="Server" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="application" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Prog3_Abgabe" type="f1a62948:ProjectNode" />
+                <item name="Server" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="build" type="c8890929:TasksNode$1" />
               </path>
             </expand>
@@ -98,7 +148,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Client" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -152,61 +202,19 @@
       <recent name="de.medieninformatik.client" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.Prog3_Abgabe:Client [buildNeeded]">
+  <component name="RunManager" selected="Application.Server">
     <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="de.medieninformatik.server.Server" />
-      <module name="Prog3_Abgabe.main" />
+      <option name="MAIN_CLASS_NAME" value="de.medieninformatik.server.rest.Server" />
+      <module name="Prog3_Abgabe.Server.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="de.medieninformatik.server.*" />
+          <option name="PATTERN" value="de.medieninformatik.server.rest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
-    </configuration>
-    <configuration name="Prog3_Abgabe [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="build" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="Prog3_Abgabe:Client [buildNeeded]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/Client" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="buildNeeded" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
     </configuration>
     <configuration name="Prog3_Abgabe:Client [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -229,7 +237,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="Prog3_Abgabe:Client [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="Prog3_Abgabe:Client [run]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/Client" />
@@ -240,7 +248,49 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="clean" />
+            <option value="run" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Prog3_Abgabe:Server [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Server" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Prog3_Abgabe:Server [run]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Server" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="run" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -252,18 +302,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.Server" />
-      <item itemvalue="Gradle.Prog3_Abgabe:Client [buildNeeded]" />
+      <item itemvalue="Gradle.Prog3_Abgabe:Client [run]" />
+      <item itemvalue="Gradle.Prog3_Abgabe:Server [build]" />
+      <item itemvalue="Gradle.Prog3_Abgabe:Server [run]" />
       <item itemvalue="Gradle.Prog3_Abgabe:Client [build]" />
-      <item itemvalue="Gradle.Prog3_Abgabe:Client [clean]" />
-      <item itemvalue="Gradle.Prog3_Abgabe [build]" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.Prog3_Abgabe:Client [buildNeeded]" />
-        <item itemvalue="Gradle.Prog3_Abgabe:Client [clean]" />
-        <item itemvalue="Gradle.Prog3_Abgabe:Client [build]" />
-        <item itemvalue="Gradle.Prog3_Abgabe [build]" />
         <item itemvalue="Application.Server" />
+        <item itemvalue="Gradle.Prog3_Abgabe:Server [build]" />
+        <item itemvalue="Gradle.Prog3_Abgabe:Server [run]" />
+        <item itemvalue="Gradle.Prog3_Abgabe:Client [run]" />
+        <item itemvalue="Gradle.Prog3_Abgabe:Client [build]" />
       </list>
     </recent_temporary>
   </component>
@@ -277,7 +327,7 @@
       <updated>1673868492974</updated>
       <workItem from="1673868494048" duration="31110000" />
       <workItem from="1673910544094" duration="2851000" />
-      <workItem from="1673949881571" duration="424000" />
+      <workItem from="1673949881571" duration="14997000" />
     </task>
     <task id="LOCAL-00001" summary="Version 0.1: Added connection to database, data and functions to add data to database">
       <created>1673906745435</created>
@@ -300,7 +350,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673912654745</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Version 0.4: Added Rest Methods">
+      <created>1673950401906</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1673950401906</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -322,6 +379,7 @@
     <MESSAGE value="Version 0.1: Added connection to database, data and functions to add data to database" />
     <MESSAGE value="Version 0.2: Added rest framework and client before switching to JavaFX" />
     <MESSAGE value="Version 0.3: Extracted client to Client Module and added FXML" />
-    <option name="LAST_COMMIT_MESSAGE" value="Version 0.3: Extracted client to Client Module and added FXML" />
+    <MESSAGE value="Version 0.4: Added Rest Methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="Version 0.4: Added Rest Methods" />
   </component>
 </project>
