@@ -1,5 +1,6 @@
 package de.medieninformatik.server.database;
 
+import de.medieninformatik.common.Ansi;
 import de.medieninformatik.common.Author;
 import de.medieninformatik.common.Book;
 import de.medieninformatik.common.Subfield;
@@ -23,6 +24,7 @@ public class Database {
     public static void start() {
         try {
             statement = connection.createStatement();
+            LOGGER.log(Level.INFO, "{0}Connection to database established!{1}\n", new Object[]{Ansi.GREEN, Ansi.RESET});
         }
         catch (SQLException e) {
             LOGGER.log(Level.SEVERE, "Database#main(): Error while accessing the database");
@@ -86,10 +88,10 @@ public class Database {
                 LOGGER.log(Level.SEVERE, "Database#createTables(): Timeout while executing statement!");
             }
             if (se.getClass().equals(SQLSyntaxErrorException.class)) {
-                LOGGER.log(Level.SEVERE, "Database#createTables(): Error in SQL-Syntax!");
+                LOGGER.log(Level.SEVERE, "Error in SQL-Syntax!");
             }
             else {
-                LOGGER.log(Level.SEVERE, "Database#createTables(): Error while accessing the database");
+                LOGGER.log(Level.SEVERE, "Error while accessing the database");
             }
             se.printStackTrace();
         }
@@ -100,9 +102,19 @@ public class Database {
         addAuthors();
         addSubfields();
         addForeignKeys();
+        LOGGER.log(Level.INFO, "{0}---- Finished setting up database ----{1}\n",
+                new Object[]{Ansi.GREEN, Ansi.RESET});
+        try {
+            statement.close();
+        }
+        catch (SQLException e) {
+            LOGGER.log(Level.SEVERE, "Could not close connection!");
+            e.printStackTrace();
+        }
     }
 
     private static void addBooks() {
+        LOGGER.log(Level.INFO, "{0}Adding books{1}\n", new Object[]{Ansi.CYAN, Ansi.RESET});
         List<Book> books = Data.createBookList();
         for (Book book : books) {
             String bookSQL = String.format("""
@@ -138,7 +150,7 @@ public class Database {
                     statement.execute(bookAuthorSQL);
                 }
                 catch (SQLException e) {
-                    LOGGER.log(Level.SEVERE, "Database#addBooks(): Error while executing SQL to add bookAuthors!");
+                    LOGGER.log(Level.SEVERE, "Error while executing SQL to add bookAuthors!");
                     e.printStackTrace();
                 }
             }
@@ -154,14 +166,17 @@ public class Database {
                     statement.execute(bookSubsSQL);
                 }
                 catch (SQLException e) {
-                    LOGGER.log(Level.SEVERE, "Database#addBooks(): Error while executing SQL to add bookSubfields!");
+                    LOGGER.log(Level.SEVERE, "Error while executing SQL to add bookSubfields!");
                     e.printStackTrace();
                 }
             }
         }
+        LOGGER.log(Level.INFO, "{0}Added books, books authors and books subfields{1}\n",
+                new Object[]{Ansi.GREEN, Ansi.RESET});
     }
 
     private static void addAuthors() {
+        LOGGER.log(Level.INFO, "{0}Adding authors{1}\n", new Object[]{Ansi.CYAN, Ansi.RESET});
         List<Author> authors = Data.createAuthorList();
         for (Author author : authors) {
             String authorSQL = String.format("""
@@ -177,13 +192,15 @@ public class Database {
                 statement.execute(authorSQL);
             }
             catch (SQLException e) {
-                LOGGER.log(Level.SEVERE, "Database#addAuthors(): Error while executing SQL to add authors!");
+                LOGGER.log(Level.SEVERE, "Error while executing SQL to add authors!");
                 e.printStackTrace();
             }
         }
+        LOGGER.log(Level.INFO, "{0}Added authors{1}\n", new Object[]{Ansi.GREEN, Ansi.RESET});
     }
 
     private static void addSubfields() {
+        LOGGER.log(Level.INFO, "{0}Adding subfields{1}\n", new Object[]{Ansi.CYAN, Ansi.RESET});
         List<Subfield> subfields = Data.createSubfieldList();
         for (Subfield subfield : subfields) {
             String subfieldSQL = String.format("""
@@ -202,9 +219,11 @@ public class Database {
                 e.printStackTrace();
             }
         }
+        LOGGER.log(Level.INFO, "{0}Added subfields{1}\n", new Object[]{Ansi.GREEN, Ansi.RESET});
     }
 
     private static void addForeignKeys() {
+        LOGGER.log(Level.INFO, "{0}Adding foreign keys{1}\n", new Object[]{Ansi.CYAN, Ansi.RESET});
         String addFKBookAuthor = """
                 ALTER TABLE `bookauthors`
                     ADD CONSTRAINT `AuthorFK`
@@ -235,6 +254,7 @@ public class Database {
         try {
             statement.execute(addFKBookAuthor);
             statement.execute(addFKBookSubfield);
+            LOGGER.log(Level.INFO, "{0}Added foreign keys{1}\n", new Object[]{Ansi.GREEN, Ansi.RESET});
         }
         catch (SQLException e) {
             LOGGER.log(Level.SEVERE, "Database#addForeignKeys(): Error while executing SQL to add foreign keys!");
@@ -260,7 +280,9 @@ public class Database {
             statement.execute("SET FOREIGN_KEY_CHECKS = 1;");
         }
         catch (SQLException e) {
-            throw new RuntimeException(e);
+            LOGGER.log(Level.SEVERE, "{0}Exception while executing SQL to drop all tables!{1}",
+                    new Object[]{Ansi.RED, Ansi.RESET});
+            e.printStackTrace();
         }
     }
 }

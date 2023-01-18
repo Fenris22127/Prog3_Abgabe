@@ -1,6 +1,9 @@
 plugins {
     id 'java'
     id 'application'
+    // ---- FIXME: (hopefully) temporary due to issues with client
+    id 'org.openjfx.javafxplugin' version '0.0.13'
+    // ----
 }
 
 group 'de.medieninformatik'
@@ -52,4 +55,10 @@ dependencies {
 
 test {
     useJUnitPlatform()
+}
+
+// ---- FIXME: (hopefully) temporary due to issues with client
+javafx {
+    version = '17.0.2'
+    modules = ['javafx.controls', 'javafx.fxml']
 }
