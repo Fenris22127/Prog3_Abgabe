@@ -22,7 +22,7 @@ public class BooksOverview extends Application {
     public void start(Stage primaryStage) {
         try {
             final FXMLLoader fxmlLoader = new FXMLLoader(getClass()
-                .getResource("books-overview.fxml"));
+                .getResource("temp_books-overview.fxml"));
             Scene scene = new Scene(fxmlLoader.load(), 1100, 800);
             primaryStage.setScene(scene);
             //...

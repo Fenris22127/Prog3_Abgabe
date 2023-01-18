@@ -4,24 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c5d6672e-5de7-4549-9c66-bd9881799334" name="Changes" comment="Version 0.5: Filled Rest Methods, tried fixing the Client without success, added comments and detailed logging&#10;TODO: Fix Client (Cause: WebTarget.request() in BooksClient.java, Error: jakarta.annotations.Priority cannot be found. Attempts: (1) Deleting module.info: Causes the javafx.controls module to not be found anymore -- (2) Manually loading jakarta.annotations api via build.gradle: Error persists)">
-      <change afterPath="$PROJECT_DIR$/Server/src/main/java/de/medieninformatik/server/database/BookQuery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Server/src/main/java/de/medieninformatik/server/tempclient/BooksClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Server/src/main/java/de/medieninformatik/server/tempclient/BooksClientController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Server/src/main/java/de/medieninformatik/server/tempclient/BooksOverview.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Server/src/main/java/de/medieninformatik/server/tempclient/Filter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Server/src/main/java/de/medieninformatik/server/tempclient/IBooksOverview.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Server/src/main/resources/de/medieninformatik/server/temp_books-overview.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Server/src/main/resources/de/medieninformatik/server/tests.sql" afterDir="false" />
+    <list default="true" id="c5d6672e-5de7-4549-9c66-bd9881799334" name="Changes" comment="Version 0.8: Fixed issues after attempting to fix a detached head&#10;TODO: Client issue persists">
+      <change afterPath="$PROJECT_DIR$/Client/src/main/java/de/medieninformatik/client/problem_with_client.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/src/main/java/module-info.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Client/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/src/main/java/de/medieninformatik/client/BooksClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client/src/main/java/de/medieninformatik/client/BooksClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/src/main/java/de/medieninformatik/client/BooksOverview.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client/src/main/java/de/medieninformatik/client/BooksOverview.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/src/main/java/de/medieninformatik/client/IBooksOverview.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client/src/main/java/de/medieninformatik/client/IBooksOverview.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/src/main/java/de/medieninformatik/client/controller/BooksClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client/src/main/java/de/medieninformatik/client/controller/BooksClientController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client/src/main/resources/de/medieninformatik/client/exc/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Server/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/src/main/java/de/medieninformatik/server/database/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/de/medieninformatik/server/database/Database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/main/java/de/medieninformatik/server/tempclient/BooksOverview.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/de/medieninformatik/server/tempclient/BooksOverview.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +46,17 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="Prog3_Abgabe" type="f1a62948:ProjectNode" />
               </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Prog3_Abgabe" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Prog3_Abgabe" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
             </expand>
             <select />
           </tree_state>
@@ -67,8 +69,8 @@
       <list>
         <option value="Interface" />
         <option value="FxmlFile" />
-        <option value="module-info" />
         <option value="Class" />
+        <option value="module-info" />
       </list>
     </option>
   </component>
@@ -76,6 +78,7 @@
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$/Client" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Client" />
@@ -91,32 +94,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;database.data.extractors.current.export.id&quot;: &quot;CSV-Groovy.csv.groovy&quot;,
-    &quot;database.data.extractors.current.id&quot;: &quot;CSV-Groovy.csv.groovy&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;last_directory_selection&quot;: &quot;C:/Users/Elisa/IdeaProjects/Prog3_Abgabe/src/main/java/de/medieninformatik&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Elisa/IdeaProjects/Prog3_Abgabe/Server/src/main/resources/de/medieninformatik/server&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "database.data.extractors.current.export.id": "CSV-Groovy.csv.groovy",
+    "database.data.extractors.current.id": "CSV-Groovy.csv.groovy",
+    "jdk.selected.JAVA_MODULE": "17",
+    "last_directory_selection": "C:/Users/Elisa/IdeaProjects/Prog3_Abgabe/src/main/java/de/medieninformatik",
+    "last_opened_file_path": "C:/Users/Elisa/Downloads",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Elisa\IdeaProjects\Prog3_Abgabe\Server\src\main\resources\de\medieninformatik\server" />
@@ -137,13 +140,13 @@
       <recent name="de.medieninformatik.client" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.BookQuery">
-    <configuration name="BookQuery" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="de.medieninformatik.server.database.BookQuery" />
+  <component name="RunManager" selected="Application.de.medieninformatik.client.BooksOverview">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="de.medieninformatik.server.Main" />
       <module name="Prog3_Abgabe.Server.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="de.medieninformatik.server.database.*" />
+          <option name="PATTERN" value="de.medieninformatik.server.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -151,18 +154,60 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="de.medieninformatik.server.Main" />
-      <module name="Prog3_Abgabe.Server.main" />
+    <configuration name="de.medieninformatik.client.BooksOverview" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="de.medieninformatik.client.BooksOverview" />
+      <module name="Prog3_Abgabe.Client.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="de.medieninformatik.server.tempclient.*" />
+          <option name="PATTERN" value="de.medieninformatik.client.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="Prog3_Abgabe [buildDependents]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="buildDependents" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Prog3_Abgabe [buildNeeded]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="buildNeeded" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
     </configuration>
     <configuration name="Prog3_Abgabe [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -185,62 +230,20 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="Prog3_Abgabe:Client [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/Client" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="dependencies" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="Prog3_Abgabe:Client [run]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/Client" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--debug" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="run" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
     <list>
-      <item itemvalue="Application.BookQuery" />
+      <item itemvalue="Application.de.medieninformatik.client.BooksOverview" />
       <item itemvalue="Application.Main" />
+      <item itemvalue="Gradle.Prog3_Abgabe [buildDependents]" />
+      <item itemvalue="Gradle.Prog3_Abgabe [buildNeeded]" />
       <item itemvalue="Gradle.Prog3_Abgabe [clean]" />
-      <item itemvalue="Gradle.Prog3_Abgabe:Client [dependencies]" />
-      <item itemvalue="Gradle.Prog3_Abgabe:Client [run]" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.Prog3_Abgabe:Client [run]" />
-        <item itemvalue="Gradle.Prog3_Abgabe:Client [dependencies]" />
         <item itemvalue="Gradle.Prog3_Abgabe [clean]" />
+        <item itemvalue="Gradle.Prog3_Abgabe [buildNeeded]" />
+        <item itemvalue="Gradle.Prog3_Abgabe [buildDependents]" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.BookQuery" />
+        <item itemvalue="Application.de.medieninformatik.client.BooksOverview" />
       </list>
     </recent_temporary>
   </component>
@@ -293,7 +296,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674000611002</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Version 0.8: Fixed issues after attempting to fix a detached head&#10;TODO: Client issue persists">
+      <created>1674051619821</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1674051619821</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -304,7 +314,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="SHOW_ROOT_NAMES" value="true" />
+            </State>
           </value>
         </entry>
       </map>
@@ -317,7 +329,8 @@
     <MESSAGE value="Version 0.3: Extracted client to Client Module and added FXML" />
     <MESSAGE value="Version 0.4: Added Rest Methods" />
     <MESSAGE value="Version 0.5: Filled Rest Methods, tried fixing the Client without success, added comments and detailed logging&#10;TODO: Fix Client (Cause: WebTarget.request() in BooksClient.java, Error: jakarta.annotations.Priority cannot be found. Attempts: (1) Deleting module.info: Causes the javafx.controls module to not be found anymore -- (2) Manually loading jakarta.annotations api via build.gradle: Error persists)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Version 0.5: Filled Rest Methods, tried fixing the Client without success, added comments and detailed logging&#10;TODO: Fix Client (Cause: WebTarget.request() in BooksClient.java, Error: jakarta.annotations.Priority cannot be found. Attempts: (1) Deleting module.info: Causes the javafx.controls module to not be found anymore -- (2) Manually loading jakarta.annotations api via build.gradle: Error persists)" />
+    <MESSAGE value="Version 0.8: Fixed issues after attempting to fix a detached head&#10;TODO: Client issue persists" />
+    <option name="LAST_COMMIT_MESSAGE" value="Version 0.8: Fixed issues after attempting to fix a detached head&#10;TODO: Client issue persists" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
