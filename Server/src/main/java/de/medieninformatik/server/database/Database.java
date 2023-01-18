@@ -1,8 +1,8 @@
 package de.medieninformatik.server.database;
 
-import de.medieninformatik.server.objects.Author;
-import de.medieninformatik.server.objects.Book;
-import de.medieninformatik.server.objects.Subfield;
+import de.medieninformatik.common.Author;
+import de.medieninformatik.common.Book;
+import de.medieninformatik.common.Subfield;
 
 import java.sql.*;
 import java.util.List;
@@ -10,7 +10,12 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class Database {
+
+    /**
+     * Erstellt einen {@link Logger} für diese Klasse
+     */
     private static final Logger LOGGER = Logger.getLogger(Database.class.getName());
+
     private static final Connection connection = DBModel.getInstance().getConnection();
 
     private static Statement statement;

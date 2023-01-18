@@ -1,4 +1,4 @@
-package de.medieninformatik.server.objects;
+package de.medieninformatik.common;
 
 import java.io.Serializable;
 import java.util.List;
